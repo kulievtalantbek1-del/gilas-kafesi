@@ -5,7 +5,7 @@
    Бардык баалар — МИСАЛ, кафе өзү тактайт. */
 const MENU = {
   'Улуттук тамактар': [
-    ['Ош палоо (плов)', 'Күрүч, эт жана сабиз менен салттуу даярдалат.', 350, 'plov'],
+    ['Ош палоо (плов)', 'Күрүч, эт жана сабиз менен салттуу даярдалат.', 300, 'plov'],
     ['Лагман', 'Колго жасалган кесме, эт жана жашылчалар.', 300, 'lagman'],
     ['Манты', 'Буу менен бышырылган, эт жана пияз салынган.', 350, 'manty']],
   'Эт тамактары': [
@@ -43,7 +43,7 @@ const src = v => /^https?:/.test(v) ? v : IMG_DIR + v + '.jpg';
 const fallback = (img, t, h, slug) => { img.onerror = null; img.src = placeholder(t, h, slug); };
 
 /* Сүрөт жок болсо — ылайыктуу placeholder (SVG) */
-const EMOJI = {plov:'🍛',lagman:'🍜',manty:'🥟',kuurdak:'🍳',shashlyk:'🍢',shorpo:'🍲',mastava:'🍲',salat:'🥗','achuu-salat':'🥗',fri:'🍟',grechka:'🍚',samsa:'🥧',dymlama:'🥘',nan:'🫓',tokoch:'🥯',chai:'🍵',kompot:'🍹','chak-chak':'🍯',tort:'🍰',desert:'🍰'};
+const EMOJI = {plov:'',lagman:'',manty:'',kuurdak:'🍳',shashlyk:'🍢',shorpo:'🍲',mastava:'🍲',salat:'🥗','achuu-salat':'🥗',fri:'🍟',grechka:'🍚',samsa:'🥧',dymlama:'🥘',nan:'🫓',tokoch:'🥯',chai:'🍵',kompot:'🍹','chak-chak':'🍯',tort:'🍰',desert:'🍰'};
 function placeholder(text, h = 300, slug = '') {
   const e = EMOJI[slug] || '🍽️';
   const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='400' height='${h}'><defs><radialGradient id='g' cx='50%' cy='40%' r='75%'><stop offset='0' stop-color='#f7ecd0'/><stop offset='1' stop-color='#d9c08a'/></radialGradient></defs><rect width='100%' height='100%' fill='url(#g)'/><circle cx='200' cy='${h/2-14}' r='70' fill='#fff' opacity='.55'/><text x='50%' y='${h/2+14}' font-size='84' text-anchor='middle'>${e}</text><text x='50%' y='${h-22}' fill='#3b2a20' font-family='Georgia' font-size='20' text-anchor='middle'>${text}</text></svg>`;
