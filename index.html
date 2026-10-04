@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ГИЛАС кафе — Ош шаары, 218-квартал</title>
+<meta name="description" content="ГИЛАС кафеси — Ош шаарындагы 218-кварталда жайгашкан кафе. Даамдуу тамактар, жогорку деңгээлдеги тейлөө жана ашка заказ кабыл алуу.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER (sticky) ===== -->
+<header class="header" id="top">
+  <div class="container header__in">
+    
+    <a href="#top" class="logo" aria-label="ГИЛАС — башкы бет">
+      <span class="logo__mark">Г</span>
+      <span><b>ГИЛАС</b><small>Даам. Сапат. Меймандостук.</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Менюну ачуу" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="#top">Башкы бет</a>
+      <a href="#about">Биз жөнүндө</a>
+      
+      <a href="#menu">Меню</a>
+      <a href="#order">Ашка заказ</a>
+      <a href="#advantages">Артыкчылыктары</a>
+      <a href="#contact">Байланыш</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ===== HERO: фон сүрөтү CSS'те (--hero-img) же ушул жерде data-bg аркылуу алмаштырылат ===== -->
+<section class="hero" id="hero" style="--hero-img: url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1600&q=80');">
+  <div class="hero__overlay"></div>
+  <div class="container hero__in">
+    <h1>ГИЛАС</h1>
+    <p class="hero__sub">Даамы эсте калган меймандостук</p>
+    <p class="hero__text">Ош шаарындагы 218-кварталда жайгашкан ГИЛАС кафесине кош келиңиз!</p>
+    <div class="btns">
+      <a href="#menu" class="btn btn--gold">Менюну көрүү</a>
+      <a href="tel:0556904011" class="btn btn--ghost">Ашка заказ берүү</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="title reveal">ГИЛАС — даам жана меймандостук айкалышкан жер</h2>
+    <p class="lead reveal">Биздин кафеде коноктор үчүн даамдуу тамактар, жагымдуу атмосфера жана жогорку деңгээлдеги тейлөө сунушталат.</p>
+    <div class="grid grid--3" id="advantages">
+      <article class="card reveal"><h3>Жогорку сапат</h3><p>Тамак-аштын сапатына өзгөчө көңүл бурабыз.</p></article>
+      <article class="card reveal"><h3>Ар түрдүү меню</h3><p>Ар кандай табитке ылайык бир нече түрдөгү даамдуу тамактар.</p></article>
+      <article class="card reveal"><h3>Жогорку деңгээлдеги тейлөө</h3><p>Ар бир конокко сылык жана сапаттуу кызмат көрсөтүү.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU: тамактар script.js ичиндеги MENU массивинен жасалат ===== -->
+<section class="section section--alt" id="menu">
+  <div class="container">
+    <h2 class="title reveal">Биздин меню</h2>
+    <p class="note">Бааларды мисал катары көрсөтүлгөн — кафе өзү тактайт.</p>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="grid grid--3" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- ===== GALLERY: сүрөттөр script.js ичиндеги GALLERY массивинен ===== -->
+<section class="section" id="gallery">
+  <div class="container">
+    <h2 class="title reveal">Даамдуу көз ирмемдер</h2>
+    <div class="gallery" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- ===== ORDER (өзгөчө көрүнүктүү) ===== -->
+<section class="order" id="order">
+  <div class="container order__in reveal">
+    <h2>Ашка заказ кабыл алынат</h2>
+    <p>Той-топур, маараке, үй-бүлөлүк майрамдар жана башка иш-чаралар үчүн ашка заказ кабыл алабыз.</p>
+    <ul class="checks">
+      <li>Жаңы даярдалган тамактар</li>
+      <li>Сапаттуу азыктар</li>
+      <li>Жогорку деңгээлдеги тейлөө</li>
+      <li>Заказды алдын ала кабыл алуу</li>
+      <li>Майрамдык иш-чараларга заказ</li>
+    </ul>
+    <div class="btns">
+      <a href="tel:0556904011" class="btn btn--gold">Заказ берүү</a>
+      <a href="https://wa.me/996556904011" class="btn btn--ghost" target="_blank" rel="noopener">WhatsApp аркылуу заказ берүү</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section">
+  <div class="container">
+    <h2 class="title reveal">Сиз үчүн кызмат кылабыз</h2>
+    <div class="grid grid--5">
+      <article class="card card--sm reveal"><h3>Кафеде тамактануу</h3></article>
+      <article class="card card--sm reveal"><h3>Ашка заказ</h3></article>
+      <article class="card card--sm reveal"><h3>Үй-бүлөлүк иш-чаралар</h3></article>
+      <article class="card card--sm reveal"><h3>Той-топур жана мааракелер</h3></article>
+      <article class="card card--sm reveal"><h3>Алдын ала заказ</h3></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS (placeholder) ===== -->
+<section class="section section--alt">
+  <div class="container">
+    <h2 class="title reveal">Коноктордун пикири</h2>
+    <div class="grid grid--4">
+      <!-- Реалдуу пикир келгенде текстти жана атты алмаштырыңыз -->
+      <blockquote class="card reveal"><p>Кардардын пикири бул жерде көрсөтүлөт</p><cite>Кардардын аты</cite></blockquote>
+      <blockquote class="card reveal"><p>Кардардын пикири бул жерде көрсөтүлөт</p><cite>Кардардын аты</cite></blockquote>
+      <blockquote class="card reveal"><p>Кардардын пикири бул жерде көрсөтүлөт</p><cite>Кардардын аты</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="container contact">
+    <div>
+      <h2 class="title">Биз менен байланышыңыз</h2>
+      <p><b>Дарек:</b><br>Ош шаары, 218-квартал, 2-көчө</p>
+      <p><b>Администратор:</b><br><a href="tel:0556904011" class="phone">0556 90 40 11</a></p>
+      <div class="btns">
+        <a href="tel:0556904011" class="btn btn--green">Чалуу</a>
+        <a href="https://wa.me/996556904011" class="btn btn--wa" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <!-- Картанын placeholder: "ГИЛАС чайханасы, Ош шаары, 218-квартал" — Google Maps/2GIS iframe'ди ушул жерге коюңуз -->
+    <div class="map" id="map"><span>Карта бул жерде көрсөтүлөт<br><small>ГИЛАС чайханасы, Ош шаары, 218-квартал</small></span></div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__in">
+    <div><b class="footer__name">ГИЛАС</b><p>Даам. Сапат. Меймандостук.</p></div>
+    <div><p>Ош шаары, 218-квартал</p><p><a href="tel:0556904011">0556 90 40 11</a></p></div>
+    <div class="social">
+      <!-- Шилтемелер азырынча placeholder (#) -->
+      <a href="#">Instagram</a><a href="#">WhatsApp</a><a href="#">2GIS</a><a href="#">Google Maps</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Мобилдик туруктуу чалуу кнопкасы -->
+<a href="tel:0556904011" class="fab" aria-label="Чалуу">Чалуу</a>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" hidden><button aria-label="Жабуу">✕</button><img alt=""></div>
+
+<script src="script.js"></script>
+</body>
+</html>
